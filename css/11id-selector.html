@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #my head {
+            color: blue;
+        }
+        #myhead {
+            color: yellow;
+        }
+        #myHead {
+            color: chartreuse;
+        }
+        #yourHead {
+            text-decoration: underline;
+        }
+        #3head {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!-- 중복되지 않게 영문, 숫자, -, _만 사용 -->
+    <h1 id="my head">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead">Lorem, ipsum.</h1>
+    <h1 id="myHead">Lorem, ipsum.</h1>
+    <!-- 중복된 아이디 -브라우저에 실행되도 쓰면 안됨 -->
+    <h1 id="yourHead">Lorem, ipsum dolor.</h1>
+    <h1 id="yourHead">Fugit, dolore esse.</h1>
+    <h1 id="3head">Quod, ratione amet!</h1>
+
+    <!-- emmet: #이 id 속성임 -->
+    <!-- h1 -->
+    <h1></h1>
+    <!-- h1#hisHead -->
+    <h1 id="hisHead"></h1>
+    <!-- h1#herHead>lorem3 -->
+    <h1 id="herHead">Lorem, ipsum dolor.</h1>
+    <!-- h1#head$*3 -->
+    <h1 id="head1"></h1>
+    <h1 id="head2"></h1>
+    <h1 id="head3"></h1>
+    <!-- h1#jackHead$*3>lorem3 -->
+    <h1 id="jackHead1">Lorem, ipsum dolor.</h1>
+    <h1 id="jackHead2">Incidunt, voluptate vero?</h1>
+    <h1 id="jackHead3">Minus, earum ex.</h1>
+    
+</body>
+</html>
