@@ -2,36 +2,34 @@
 <html>
 <head>
     <style>
-        /* 자식 ">" */
-        div>p {
+        .error { 
             color: blue;
         }
-        /* 자손 " " */
-        p i { color: red;}
-        /* 인접형제 "+" */
-        div+h1 { 
+       
+        #head>p { color: red;}
+      
+        .note.para { 
             background-color: yellow;
         }
-        /* 일반형제 "~" */
-        h1~pre {
+      
+        .para {
+            background-color: aquamarine;
             border: 5px solid;
         }
-        
+        #myHeader {
+            color: blueviolet;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="error">
-            <p>Lorem, ipsum dolor.</p>
-            <p>Quae, necessitatibus consequuntur?</p>
-            <p>Ea, officiis sunt.</p>
-        </div>
-    </div>
-    <h1>Lorem, ipsum.</h1>
-    <p>Lorem <span>ipsum </span>dolor sit <i> amet.</i></p>
-    <pre>Lorem ipsum dolor s   it amet consectetur adipisicing elit.</pre>
-    <p>Lorem, ipsum dolor.</p>
-    <pre>Lorem ips    um dolor sit.</pre>
+    <h1 class="error">Lorem ipsum dolor sit amet.</h1>
+    <h1 id="head">
+        <p>Ut sunt consequatur eos dolores.</p>
+        <pre>Lorem, ipsum dolor.</pre>
+    </h1>
+    <h1 id="myHeader" class="error">Exercitationem voluptatem libero unde doloribus!</h1>
+    <h1 class="note para">Labore repudiandae eveniet neque aliquid!</h1>
+    <h1 class="para">Totam nihil odio id iusto.</h1>
 
 </body>
 </html>
