@@ -2,11 +2,39 @@
 <html>
 <head>
     <style>
+       #box1 {
+            border-width: 10px;
+            border-style: dotted;
+            border-color: blue;
+            border-radius: 20px;
+       }
+       #box2 {
+        /* 크기 */
+            border-style: solid;
+            border-width: 5px 15px 30px 50px;
+        }
+        #box3 {
+            /* 색 */
+            border: 10px solid;
+            border-color: red blue green yellow;
+        }
+        #box4 {
+            /* 모양 */
+            border: 5px blueviolet;
+            border-style: solid dotted double dashed;
+        }
+        #box5 {
+            /* 모서리 둥글기 */
+            border: 10px solid;
+            border-radius: 5px 15px 30px 50px;
+        }
        
     </style>
 </head>
 <body>
-    <h1>Lorem, ipsum dolor.</h1>
-
-</body>
+    <h1 id="box1">box1</h1>
+    <h1 id="box2">box2</h1>
+    <h1 id="box3">box3</h1>
+    <h1 id="box4">box4</h1>
+    <h1 id="box5">box5</h1>
 </html>
