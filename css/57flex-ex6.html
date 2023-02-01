@@ -17,15 +17,21 @@
             background-color: rgb(4, 4, 53);
         }
         .item {
-            padding: 25px 12px;
+            padding: 5px 7px;
             font-weight: bold;
             font-size: 18px;
-            font-family: 'Itim', cursive
-
+            font-family: 'Itim', cursive;
+        }
+        .item:nth-child(2),
+        .item:nth-child(3),
+        .item:nth-child(4), 
+        .item:nth-child(5) {
+            padding-top: 20px;
         }
         .item>img {
             width: 50px;
             height: 50px;
+        
         }
         .item:hover {
             color: black;
@@ -46,6 +52,14 @@
         }
         .item2:hover {
             color: black;
+            background-color: white;
+        }
+        #text {
+            margin: auto;
+            visibility: hidden;
+        }
+        #text:focus {
+            visibility: visible;
             background-color: white;
         }
 
@@ -143,7 +157,9 @@
             <i class="fa-solid fa-earth-americas"></i>
         </div>
         <div class="item2">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass">
+                <input type="text" id="text">
+            </i>
         </div>
     </div>
     <div class="last">
