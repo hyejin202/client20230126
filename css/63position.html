@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1 {
+            background-color: yellow;
+        }
+        h1:nth-child(odd) {
+            background-color: skyblue;
+        }
+
+        #head1 {
+            /* static : 기본값, 위치를 변경할 수 없음 */
+            /* 포지션된 요소가 아니다 */
+            position: static;
+            left: 20px;
+        }
+        #head2 {
+            /* relative : 원래 위치 기준으로 포지션 가능 */
+            position: relative;
+            left: 50px;
+        }
+        #head3 {
+            /* 원래 위치 기준에서 위로 30px 이동 */
+            position: relative;
+            bottom: 30px;
+        }
+        #head4 {
+            /* 원래 위치 기준에서 왼쪽으로 10px 이동 */
+            position: relative;
+            right: 10px;
+        }
+        #head5 {
+            /* 원래 위치 기준에서 아래로 20px 이동 */
+            position: relative;
+            top: 20px;
+        }
+        #head6 {
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        #head7:hover {
+            position: relative;
+            bottom: 5px;
+        }
+        #head8 {
+            
+        }
+        #head9 {
+            
+        }
+        #head10 {
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">
+        Lorem, ipsum dolor.
+    </h1>
+    <h1 id="head2">
+        Exercitationem, ad consectetur?
+    </h1>
+    <h1 id="head3">
+        Nam, tempore nobis.
+    </h1>
+    <h1 id="head4">
+        Placeat, ad vel.
+    </h1>
+    <h1 id="head5">
+        Sint, similique necessitatibus?
+    </h1>
+    <h1 id="head6">
+        Inventore, quisquam libero.
+    </h1>
+    <h1 id="head7">
+        Alias, vero numquam!
+    </h1>
+    <h1 id="head8">
+        Aut, minus earum.
+    </h1>
+    <h1 id="head9">
+        Quisquam, id maxime!
+    </h1>
+    <h1 id="head10">
+        Placeat, dolorum numquam.
+    </h1>
+</body>
+</html>
