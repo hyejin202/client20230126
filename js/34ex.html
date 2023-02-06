@@ -9,49 +9,33 @@
     </style>
 </head>
 <body>
-    <button onclick="rps(0)">✌</button>
-    <button onclick="rps(1)">✊</button>
-    <button onclick="rps(2)">🖐</button>
-    <div>
-        컴퓨터 : <span id="com"></span>
-    </div>
-
-    <h1 id="result"></h1>
-
+    <input type="text"> 
+    <button onclick="guess()">입력</button>
+    <p id="result"></p>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    // 가위: 0, 바위: 1, 보: 2
-    function rps(p) {
-        let com = parseInt(Math.radom()*3);
-        let user = p;
+    //컴퓨터가 1~100사이의 수 선택
+    let com = parseInt(Math.random() * 100) + 1;
 
-        console.log("com", com);
-        console.log("user", user);
-
-        if (com === 0 ) {
-            document.querySelector("#com").textContent = "✌";
-        } else if (com === 1) {
-            document.querySelector("#com").textContent = "✊";
-        } else {
-            document.querySelector("#com").textContent = "🖐";
-        }
+    function guess() {
+        let user = document.querySelector("input").value;
+        user = Number(user);
 
         let message = "";
-        if (com ===user) {
-            message = "비겼습니다.";
-        } else if (user === 0 && com === 1) {
-            message = "졌습니다.";
-        } else if (user ===1 && com === 2) {
-            message = "졌습니다.";
-        }else if (user === 2 && com ===0) {
-            message = "졌습니다.";
-        } else {
-            message = "이겼습니다.";
+
+        if (user < com) {
+            message = "더 큰 수를 입력해주세요";
+        } else if (user > com) {
+            message = "더 작은 수를 입력해주세요";
+        }else {
+            message = "🎉◈♤▣♬정답입니다!◈♤▣♬🎉";
         }
 
         document.querySelector("#result").textContent = message;
     }
+
+
     </script>
 </body>
 </html>
