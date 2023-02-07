@@ -14,20 +14,22 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-       let com = parseInt(Math.radom()*100) + 1;
+        console.log("이전 코드들...");
+outerLoop : for (let j = 0; j < 5; j++) {
 
-       while (true) {
-        let user = +prompt("1~100 하나 선택");
+            console.log("j", j);
 
-        if (user < com) {
-            alert("더 큰 수를 입력");
-        } else if(user > com) {
-            alert("더 작은 수를 입력");
-        }else {
-            alert("정답");
-            break;
+            for (let i = 0; i < 5; i++) {
+                console.log("i", i);
+
+                if (i === 2) {
+                    console.log("i", i);
+                    break outerLoop;  // label에 해당하는 loop종료
+                }
+            }
         }
-       }
+
+        console.log("다음 코드들...");
     </script>
 </body>
 

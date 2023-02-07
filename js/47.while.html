@@ -14,20 +14,34 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-       let com = parseInt(Math.radom()*100) + 1;
+        let a = 1;
 
-       while (true) {
-        let user = +prompt("1~100 하나 선택");
+        while (a <= 5) {
+            console.log("hello");
 
-        if (user < com) {
-            alert("더 큰 수를 입력");
-        } else if(user > com) {
-            alert("더 작은 수를 입력");
-        }else {
-            alert("정답");
-            break;
+            // a = a + 1;
+            a++;
         }
-       }
+
+        let i = 0;
+
+        while (i < 10) {
+            console.log(i);
+            i++;
+        }
+
+        let j = 1;
+        while (j < 6) {
+            console.log(j);  //1~5 출력
+            j++;
+        }
+
+        let k = 5;
+        while (k > 0) {
+            console.log(k); //5~1 출력
+            k--;
+        }
+
     </script>
 </body>
 

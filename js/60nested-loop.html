@@ -14,20 +14,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-       let com = parseInt(Math.radom()*100) + 1;
-
-       while (true) {
-        let user = +prompt("1~100 하나 선택");
-
-        if (user < com) {
-            alert("더 큰 수를 입력");
-        } else if(user > com) {
-            alert("더 작은 수를 입력");
-        }else {
-            alert("정답");
-            break;
+        console.log("구구단 차례대로");
+        for (let i = 2; i <= 9; i++) {
+            console.log(i + "단");
+            for (let j = 1; j <= 9; j++) {
+                console.log(i + " X " + j + " = " + (i*j));
+            }
         }
-       }
+
+        //9단부터 거꾸로
+        console.log("거꾸로 출력");
+        for (let i = 9; i >= 2; i--) {
+            console.log(i+"단");
+            for (let j = 9; j >= 1; j--) {
+                console.log(i + " X " + j + " = " + (i*j));
+            }
+        }
+
+
     </script>
 </body>
 

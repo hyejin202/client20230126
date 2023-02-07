@@ -14,20 +14,40 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-       let com = parseInt(Math.radom()*100) + 1;
+        let a = "java";
+        let b = "html";
+        let c = "css";
+        let d = "javascript";
+        let e = "react";
 
-       while (true) {
-        let user = +prompt("1~100 하나 선택");
+        console.log(a);
+        console.log(b);
+        console.log(c);
+        console.log(d);
+        console.log(e);
 
-        if (user < com) {
-            alert("더 큰 수를 입력");
-        } else if(user > com) {
-            alert("더 작은 수를 입력");
-        }else {
-            alert("정답");
-            break;
+        //array : 여러값을 저장한 자료형
+        console.log("array사용**************");
+        let f = ["java", "css", "html", "vue", "react"];
+
+        for (let i = 0; i < f.length; i++) {
+            console.log(f[i]);
         }
-       }
+
+        //여러 값을 타입 구분없이 가질 수 있음
+        let g = [3, "string", true, 3.14, null, undefined]
+
+        //빈 배열
+        let h = [];
+
+        // 코드가 길면 각 값 앞에서 새로운 줄 입력
+        let i = [
+            "javascript",
+            "html은 페이지의 구조를 나타낸다.",
+            "css는 html요소를 꾸며주는 요소다."
+        ];
+
+
     </script>
 </body>
 

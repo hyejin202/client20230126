@@ -14,20 +14,16 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-       let com = parseInt(Math.radom()*100) + 1;
+        //31번 파일과 같은 일을 하도록
+        //삼항 연산자 사용해서...
 
-       while (true) {
-        let user = +prompt("1~100 하나 선택");
+        let num = Number(prompt("숫자를 입력하세요", 0));
 
-        if (user < com) {
-            alert("더 큰 수를 입력");
-        } else if(user > com) {
-            alert("더 작은 수를 입력");
-        }else {
-            alert("정답");
-            break;
-        }
-       }
+        let message = (num % 2 === 0) ? "짝수입니다." : "홀수입니다.";
+        // (num % 2) ? "홀수" : "짝수";
+        //0이면 false, 1이면 true 이므로
+        console.log(message);
+
     </script>
 </body>
 
