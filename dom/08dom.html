@@ -9,26 +9,16 @@
     </style>
 </head>
 <body>
+    <h1 id="head1"></h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let message = prompt("메세지를 입력하세요", "안녕하세요");
 
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
-        }
-    }
-    console.log(car.name);
-    console.log(car.price);
+        let elem = document.getElementById("head1");
 
-    car.name = "tesla";
-
-    console.log(car.name);
-
-    car.drive();
-</script>
+        elem.textContent = message;
+    </script>
 </body>
 </html>

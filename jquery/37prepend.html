@@ -9,26 +9,16 @@
     </style>
 </head>
 <body>
+    <div id="box1">Lorem.</div>
+    <div id="box2">Temporibus?</div>
+    <div id="box3">Similique.</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
-
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
-        }
-    }
-    console.log(car.name);
-    console.log(car.price);
-
-    car.name = "tesla";
-
-    console.log(car.name);
-
-    car.drive();
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $("#box1").prepend("hello");
+        $("#box2").prepend("<h1>hi</h1>");
+        $("#box2").prepend($("<h2>world</h2>"));
+    </script>
 </body>
 </html>

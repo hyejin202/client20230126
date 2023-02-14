@@ -9,26 +9,26 @@
     </style>
 </head>
 <body>
+    <a href="https:www.daum.net" id="link1" target="_blank">Lorem.</a>
+    <a href="https://www.naver.com" id="link2" title="네이버 링크">Praesentium?</a>
+    <a href="https://www.google.com" id="link3">Sed.</a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let attr1 = $("#link1").attr("href");
+        console.log(attr1);
 
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
-        }
-    }
-    console.log(car.name);
-    console.log(car.price);
+        console.log($("#link2").attr("href"));
+        console.log($("#link3").attr("href"));
 
-    car.name = "tesla";
+        // #link1 요소의 target 속성 값 출력
+        console.log($("#link1").attr("target"));
 
-    console.log(car.name);
-
-    car.drive();
-</script>
+        // #link2 요소의 title 속성 값 출력
+        console.log($("#link2").attr("title"));
+        
+        // console.log($("#link1").attr("tiltle"));  - undefined
+    </script>
 </body>
 </html>

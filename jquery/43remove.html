@@ -9,26 +9,24 @@
     </style>
 </head>
 <body>
+    <h1>Lorem.</h1>
+    <h1>Voluptates.</h1>
+    <h1>Quisquam.</h1>
+    <h1>Exercitationem!</h1>
+    <h1>Facilis!</h1>
+    <h1>Impedit!</h1>
+    <h1>Nulla?</h1>
+    <h1>Possimus.</h1>
+    <h1>Reprehenderit.</h1>
+    <h1>Labore.</h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
-
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
-        }
-    }
-    console.log(car.name);
-    console.log(car.price);
-
-    car.name = "tesla";
-
-    console.log(car.name);
-
-    car.drive();
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $("h1").click(function(){
+            $(this).remove();
+        });
+    
+    </script>
 </body>
 </html>

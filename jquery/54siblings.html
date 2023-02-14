@@ -6,29 +6,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        .red {
+            border: 5px solid red;
+        }
+        .blue {
+            border: 5px solid blue;
+        }
     </style>
 </head>
 <body>
-
+    <h1>Lorem.</h1>
+    <h2>Et!</h2>
+    <h3>Eius.</h3>
+    <h4>Laboriosam!</h4>
+    <h5>Rem.</h5>
+    <h6>Eos?</h6>
+    <h1>Lorem.</h1>
+    <h2>Laboriosam?</h2>
+    <h3>Voluptatem?</h3>
+    <h4>Voluptates.</h4>
+    <h5>Nesciunt.</h5>
+    <h6>Nostrum?</h6>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
-
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
-        }
-    }
-    console.log(car.name);
-    console.log(car.price);
-
-    car.name = "tesla";
-
-    console.log(car.name);
-
-    car.drive();
-</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $("h3").next().addClass("red");
+        $("h6").prev().addClass("blue");
+    </script>
 </body>
 </html>

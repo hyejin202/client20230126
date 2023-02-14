@@ -9,26 +9,26 @@
     </style>
 </head>
 <body>
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2" class="note">Error!</h1>
+    <h1 id="head3" class="note">Consequatur.</h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let elem1 = document.querySelector("#head1");
+        console.log(elem1.textContent);
 
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
-        }
-    }
-    console.log(car.name);
-    console.log(car.price);
+        let elem2 = document.querySelector("#head2");
+        console.log(elem2.textContent);
 
-    car.name = "tesla";
+        let elem3 = document.querySelector(".note");  //하나만 리턴 - 문서상 먼저 작성된 요소 
+        console.log(elem3.textContent);               //Error!
 
-    console.log(car.name);
+        let elem4 = document.querySelector("h1"); //하나만 리턴 - 문서상 먼저 작성된 요소
+        console.log(elem4.textContent);           //Lorem.
 
-    car.drive();
-</script>
+        console.log(elem4.id);                    //head1
+    </script>
 </body>
 </html>

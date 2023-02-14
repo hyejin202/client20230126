@@ -9,26 +9,32 @@
     </style>
 </head>
 <body>
+    <!-- h1*2#head$>lorem2+span>lorem1 -->
+    <h1 id="head1">
+        Lorem, ipsum.
+        <span>
+            Lorem.
+        </span>
+    </h1>
+    <h1 id="head2">
+        Velit, ducimus.
+        <span>
+            Excepturi.
+        </span>
+    </h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let text1 = $("#head1").text();
+        console.log(text1);
 
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
-        }
-    }
-    console.log(car.name);
-    console.log(car.price);
+        console.log($("#head2").text());
 
-    car.name = "tesla";
+        console.log($("#head1 > span").text());
+        console.log($("#head2 > span").text());
 
-    console.log(car.name);
-
-    car.drive();
-</script>
+        console.log($("span").text());
+    </script>
 </body>
 </html>

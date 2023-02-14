@@ -9,26 +9,31 @@
     </style>
 </head>
 <body>
+    <div id="res1">Lorem.</div>
+    <div id="res2">Voluptas!</div>
+    <div id="res3">Vel.</div>
+    <div id="res4">Lorem.</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        //text
+        $("#res1").append("world");
+        //html
+        $("#res2").append("<h1>hi</h1>");
 
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
-        }
-    }
-    console.log(car.name);
-    console.log(car.price);
+        // element
+        let h2elem = document.createElement("h2");
+        h2elem.textContent = "world";
 
-    car.name = "tesla";
+        $("#res3").append(h2elem);
 
-    console.log(car.name);
+        //jquery객체 
+        let h3elem = $("<h3>hello h3</h3>");
+        $("#res4").append(h3elem);
 
-    car.drive();
-</script>
+        h3elem.slideUp(3000);
+    
+    </script>
 </body>
 </html>

@@ -9,26 +9,25 @@
     </style>
 </head>
 <body>
-
+    <h1 id="head1">Lorem.</h1>
+    <h1 id="head2" class="note">Impedit.</h1>
+    <h1 id="head3" class="note">Laborum?</h1>
+    <h1 id="head4">Deleniti.</h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    // object : 값(property)과, 기능(method)을 갖는 데이터 구조
-
-    let car = {
-        name: "kia",  //property
-        price: 5000, //property
-        drive: function() {   //method
-            console.log("운전기능 실행 중..");
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let heads = document.querySelectorAll("h1");   //여러개 - 배열로 저장
+        for (let i = 0; i < heads.length; i++) {
+            console.log(heads[i].textContent);
         }
-    }
-    console.log(car.name);
-    console.log(car.price);
 
-    car.name = "tesla";
-
-    console.log(car.name);
-
-    car.drive();
-</script>
+        // note 클래스인 요소의 갹채를 dom에서 가져와서
+        // 요소들의 textContent를 출력하기
+        // querySelectorAll 메소드 사용해보기
+        let notes = document.querySelectorAll(".note");
+        for (let i = 0; i < notes.length; i++) {
+            console.log(notes[i].textContent);
+        }
+    </script>
 </body>
 </html>
